@@ -21,5 +21,10 @@ public class ClassLoaderTest {
         method.setAccessible(true);
         method.invoke(newInstance, "class loader hello world");
 
+        Class<?> helloClazz = myXClassLoader.loadClass("Hello");
+        Object hello = helloClazz.getConstructor().newInstance();
+        Method helloClazzMethod = helloClazz.getMethod("hello");
+        helloClazzMethod.setAccessible(true);
+        helloClazzMethod.invoke(hello);
     }
 }
