@@ -1,0 +1,284 @@
+Classfile /Users/xx/Documents/workspace/learning/lesson1/target/classes/com/qee/Calculator.class
+  Last modified 2021-9-14; size 2300 bytes
+  MD5 checksum edfcd762045419291c88a8358708730f
+  Compiled from "Calculator.java"
+public class com.qee.Calculator
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #13.#49       // java/lang/Object."<init>":()V
+    #2 = Methodref          #50.#51       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    #3 = InterfaceMethodref #8.#52        // java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    #4 = Fieldref           #53.#54       // java/lang/System.out:Ljava/io/PrintStream;
+    #5 = Methodref          #55.#56       // java/io/PrintStream.println:(Ljava/lang/Object;)V
+    #6 = Class              #57           // com/qee/Calculator
+    #7 = Methodref          #6.#49        // com/qee/Calculator."<init>":()V
+    #8 = Class              #58           // java/util/function/BiFunction
+    #9 = InvokeDynamic      #0:#64        // #0:apply:()Ljava/util/function/BiFunction;
+   #10 = InvokeDynamic      #1:#64        // #1:apply:()Ljava/util/function/BiFunction;
+   #11 = InvokeDynamic      #2:#64        // #2:apply:()Ljava/util/function/BiFunction;
+   #12 = Methodref          #6.#67        // com/qee/Calculator.forEach:(II[Ljava/util/function/BiFunction;)V
+   #13 = Class              #68           // java/lang/Object
+   #14 = Utf8               <init>
+   #15 = Utf8               ()V
+   #16 = Utf8               Code
+   #17 = Utf8               LineNumberTable
+   #18 = Utf8               LocalVariableTable
+   #19 = Utf8               this
+   #20 = Utf8               Lcom/qee/Calculator;
+   #21 = Utf8               plus
+   #22 = Utf8               (II)I
+   #23 = Utf8               a
+   #24 = Utf8               I
+   #25 = Utf8               b
+   #26 = Utf8               subtract
+   #27 = Utf8               multi
+   #28 = Utf8               forEach
+   #29 = Utf8               (II[Ljava/util/function/BiFunction;)V
+   #30 = Utf8               c
+   #31 = Utf8               Ljava/lang/Object;
+   #32 = Utf8               bf
+   #33 = Utf8               Ljava/util/function/BiFunction;
+   #34 = Utf8               biFunctions
+   #35 = Utf8               [Ljava/util/function/BiFunction;
+   #36 = Utf8               LocalVariableTypeTable
+   #37 = Utf8               [Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;
+   #38 = Utf8               StackMapTable
+   #39 = Class              #35           // "[Ljava/util/function/BiFunction;"
+   #40 = Utf8               Signature
+   #41 = Utf8               (II[Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;)V
+   #42 = Utf8               main
+   #43 = Utf8               ([Ljava/lang/String;)V
+   #44 = Utf8               args
+   #45 = Utf8               [Ljava/lang/String;
+   #46 = Utf8               calculator
+   #47 = Utf8               SourceFile
+   #48 = Utf8               Calculator.java
+   #49 = NameAndType        #14:#15       // "<init>":()V
+   #50 = Class              #69           // java/lang/Integer
+   #51 = NameAndType        #70:#71       // valueOf:(I)Ljava/lang/Integer;
+   #52 = NameAndType        #72:#73       // apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #53 = Class              #74           // java/lang/System
+   #54 = NameAndType        #75:#76       // out:Ljava/io/PrintStream;
+   #55 = Class              #77           // java/io/PrintStream
+   #56 = NameAndType        #78:#79       // println:(Ljava/lang/Object;)V
+   #57 = Utf8               com/qee/Calculator
+   #58 = Utf8               java/util/function/BiFunction
+   #59 = Utf8               BootstrapMethods
+   #60 = MethodHandle       #6:#80        // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #61 = MethodType         #73           //  (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #62 = MethodHandle       #6:#81        // invokestatic com/qee/Calculator.plus:(II)I
+   #63 = MethodType         #82           //  (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+   #64 = NameAndType        #72:#83       // apply:()Ljava/util/function/BiFunction;
+   #65 = MethodHandle       #6:#84        // invokestatic com/qee/Calculator.subtract:(II)I
+   #66 = MethodHandle       #6:#85        // invokestatic com/qee/Calculator.multi:(II)I
+   #67 = NameAndType        #28:#29       // forEach:(II[Ljava/util/function/BiFunction;)V
+   #68 = Utf8               java/lang/Object
+   #69 = Utf8               java/lang/Integer
+   #70 = Utf8               valueOf
+   #71 = Utf8               (I)Ljava/lang/Integer;
+   #72 = Utf8               apply
+   #73 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #74 = Utf8               java/lang/System
+   #75 = Utf8               out
+   #76 = Utf8               Ljava/io/PrintStream;
+   #77 = Utf8               java/io/PrintStream
+   #78 = Utf8               println
+   #79 = Utf8               (Ljava/lang/Object;)V
+   #80 = Methodref          #86.#87       // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #81 = Methodref          #6.#88        // com/qee/Calculator.plus:(II)I
+   #82 = Utf8               (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+   #83 = Utf8               ()Ljava/util/function/BiFunction;
+   #84 = Methodref          #6.#89        // com/qee/Calculator.subtract:(II)I
+   #85 = Methodref          #6.#90        // com/qee/Calculator.multi:(II)I
+   #86 = Class              #91           // java/lang/invoke/LambdaMetafactory
+   #87 = NameAndType        #92:#96       // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #88 = NameAndType        #21:#22       // plus:(II)I
+   #89 = NameAndType        #26:#22       // subtract:(II)I
+   #90 = NameAndType        #27:#22       // multi:(II)I
+   #91 = Utf8               java/lang/invoke/LambdaMetafactory
+   #92 = Utf8               metafactory
+   #93 = Class              #98           // java/lang/invoke/MethodHandles$Lookup
+   #94 = Utf8               Lookup
+   #95 = Utf8               InnerClasses
+   #96 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #97 = Class              #99           // java/lang/invoke/MethodHandles
+   #98 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #99 = Utf8               java/lang/invoke/MethodHandles
+{
+  public com.qee.Calculator();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 13: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/qee/Calculator;
+
+  public static int plus(int, int);
+    descriptor: (II)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: iadd
+         3: ireturn
+      LineNumberTable:
+        line 16: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   I
+            0       4     1     b   I
+
+  public static int subtract(int, int);
+    descriptor: (II)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: isub
+         3: ireturn
+      LineNumberTable:
+        line 20: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   I
+            0       4     1     b   I
+
+  public static int multi(int, int);
+    descriptor: (II)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: imul
+         3: ireturn
+      LineNumberTable:
+        line 24: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   I
+            0       4     1     b   I
+
+  public void forEach(int, int, java.util.function.BiFunction<java.lang.Integer, java.lang.Integer, java.lang.Integer>...);
+    descriptor: (II[Ljava/util/function/BiFunction;)V
+    flags: ACC_PUBLIC, ACC_VARARGS
+    Code:
+      stack=3, locals=9, args_size=4
+         0: aload_3     // 加载BiFunction 参数到 stock
+         1: astore        4  // biFunctions 存储到局部变量4 slot
+         3: aload         4 // 接着加载局部变量slot 4 的引用数据（即biFunctions）到操作数栈
+         5: arraylength    //得到 biFunctions 数组珍藏
+         6: istore        5 //把biFunctions.length 放到 本地变量表的slot 5
+         8: iconst_0   //  把常量0 压入栈
+         9: istore        6 //把常量0 放入到 本地变量表slot 6位置
+        11: iload         6  //加载本地变量表slot6  ， 循环次数变量，记为$i到栈上
+        13: iload         5  //加载本地变量表slot5  ，biFunctions.length到栈上
+        15: if_icmpge     56  //进入循环判断 若 $i >= biFunctions.length,调转到 偏移量为56 位置，即跳出循环
+        18: aload         4 // 循环内部，把数组引用biFunctions 压入栈上
+        20: iload         6  // 把变量$i 压入栈
+        22: aaload      // 栈顶的数组下标(si)、数组引用 (biFunctions)出栈,并根据这两个数值 取出对应的数组元素值(bf)进栈。
+        23: astore        7 // 即把bf 存储本地变量表 slot 7
+        25: aload         7 // 把 存储本地变量表 slot 7 押入栈
+        27: iload_1  //把 slot1 位置数据，即变量a 押入栈
+        28: invokestatic  #2                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer; ，调用静态方法Integer.valueOf
+        31: iload_2  // 把 slot2 位置数据，即变量b 押入栈
+        32: invokestatic  #2                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer; 调用静态方法Integer.valueOf
+        35: invokeinterface #3,  3            // InterfaceMethod java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        40: astore        8 // 把bf.apply 的结果c放入 slot8 中
+        42: getstatic     #4   //获取System的静态属性out               // Field java/lang/System.out:Ljava/io/PrintStream;
+        45: aload         8 // 把slot8  的 结果c 押入栈
+        47: invokevirtual #5    //调用实例方法println               // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        50: iinc          6, 1 //吧 slot 6位置的$i 循环计数+1
+        53: goto          11 //跳转到偏移量11，进入下一次循环判断
+        56: return //返回
+      LineNumberTable:
+        line 28: 0
+        line 29: 25
+        line 30: 42
+        line 28: 50
+        line 32: 56
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           42       8     8     c   Ljava/lang/Object;
+           25      25     7    bf   Ljava/util/function/BiFunction;
+            0      57     0  this   Lcom/qee/Calculator;
+            0      57     1     a   I
+            0      57     2     b   I
+            0      57     3 biFunctions   [Ljava/util/function/BiFunction;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0      57     3 biFunctions   [Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;
+      StackMapTable: number_of_entries = 2
+        frame_type = 254 /* append */
+          offset_delta = 11
+          locals = [ class "[Ljava/util/function/BiFunction;", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 44
+    Signature: #41                          // (II[Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;)V
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=2, args_size=1
+         0: new           #6                  // class com/qee/Calculator ，分配空间Calculator
+         3: dup  //复制引用，因为接下来要调用初始化init返回后，栈上的引用就没了，所以需要先复制一份引用先
+         4: invokespecial #7                  // Method "<init>":()V
+         7: astore_1 // 对象引用存储到本地变量表slot1
+         8: aload_1 //加载本地变量slot1，即对象引用Calculator
+         9: bipush        100 //取值 -1~5 采用 iconst 指令；  取值 -128~127 采用 bipush 指令；  取值 -32768~32767 采用 sipush指令；取值 -2147483648~2147483647 采用 ldc 指令。
+        11: sipush        200 // 压入栈
+        14: iconst_3 //压入栈，数组长度
+        15: anewarray     #8                  // class java/util/function/BiFunction  new 一个数组 类型BiFunction，长度是3
+        18: dup // 复制一个数组引用
+        19: iconst_0  // 押入0常量
+        20: invokedynamic #9,  0              // InvokeDynamic #0:apply:()Ljava/util/function/BiFunction;
+        25: aastore //把 数值引用
+        26: dup
+        27: iconst_1
+        28: invokedynamic #10,  0             // InvokeDynamic #1:apply:()Ljava/util/function/BiFunction;
+        33: aastore
+        34: dup
+        35: iconst_2
+        36: invokedynamic #11,  0             // InvokeDynamic #2:apply:()Ljava/util/function/BiFunction;
+        41: aastore
+        42: invokevirtual #12                 // Method forEach:(II[Ljava/util/function/BiFunction;)V
+        45: return
+      LineNumberTable:
+        line 35: 0
+        line 36: 8
+        line 37: 45
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      46     0  args   [Ljava/lang/String;
+            8      38     1 calculator   Lcom/qee/Calculator;
+}
+SourceFile: "Calculator.java"
+InnerClasses:
+     public static final #94= #93 of #97; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #60 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #61 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #62 invokestatic com/qee/Calculator.plus:(II)I
+      #63 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  1: #60 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #61 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #65 invokestatic com/qee/Calculator.subtract:(II)I
+      #63 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  2: #60 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #61 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #66 invokestatic com/qee/Calculator.multi:(II)I
+      #63 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
