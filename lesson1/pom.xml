@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lesson</artifactId>
+    <artifactId>lesson1</artifactId>
     <build>
         <plugins>
             <plugin>
