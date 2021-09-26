@@ -10,6 +10,7 @@
     <modules>
         <module>lesson1</module>
         <module>lesson2</module>
+        <module>others</module>
     </modules>
 
     <dependencyManagement>
