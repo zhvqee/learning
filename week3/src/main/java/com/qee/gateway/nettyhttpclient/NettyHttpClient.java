@@ -2,9 +2,9 @@ package com.qee.gateway.nettyhttpclient;
 
 import com.qee.gateway.config.GateWayConfig;
 import com.qee.gateway.handlers.NettyHttpClientHandler;
+import com.qee.gateway.utils.NetUtils;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -24,7 +24,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.util.concurrent.DefaultThreadFactory;
 
-import java.net.URISyntaxException;
+import java.net.URI;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
@@ -81,11 +81,13 @@ public class NettyHttpClient {
 
             Channel channel = connect.channel();
 
-          //  String msg = url.substring(url.indexOf("?") + 1);
+            //  String msg = url.substring(url.indexOf("?") + 1);
 
             //配置HttpRequest的请求数据和一些配置信息
-           // FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, url, Unpooled.wrappedBuffer(msg.getBytes()));
-           FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, url);
+            // FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, url, Unpooled.wrappedBuffer(msg.getBytes()));
+
+            URI uri = URI.create(url.substring(url.indexOf("/")));
+            FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "/" + uri.toASCIIString());
 
 
             ResponseFuture responseFuture = new ResponseFuture();
@@ -95,13 +97,14 @@ public class NettyHttpClient {
                     //开启长连接
                     //   .set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE)
                     //设置传递请求内容的长度
-                    .set(HttpHeaderNames.CONTENT_LENGTH, request.content().readableBytes());
+                    //  .set(HttpHeaderNames.CONTENT_LENGTH, request.content().readableBytes())
+                    .set(HttpHeaderNames.HOST, NetUtils.getLocalInetAddress().getHostName());
             channel.writeAndFlush(request).sync();
             String resp = responseFuture.get(1000, TimeUnit.MILLISECONDS);
             channel.close();
             return resp;
 
-        } catch (InterruptedException  | ExecutionException | TimeoutException e) {
+        } catch (InterruptedException | ExecutionException | TimeoutException e) {
             e.printStackTrace();
         } finally {
             executors.shutdownGracefully();

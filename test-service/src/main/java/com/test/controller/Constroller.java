@@ -16,7 +16,7 @@ public class Constroller {
     @RequestMapping("/get")
     public Map<String, Object> get(String abc) {
         Map<String, Object> result = new HashMap<>();
-        result.put("result", "helloWorld->" + abc);
+        result.put("result", "test-service,helloworld->" + abc);
         System.out.println(result);
         return result;
     }
@@ -24,7 +24,7 @@ public class Constroller {
     @RequestMapping("/get2")
     public Map<String, Object> get2(String abc) {
         Map<String, Object> result = new HashMap<>();
-        result.put("result", "helloWorld2->" + abc);
+        result.put("result", "test-service2,helloworld->" + abc);
         System.out.println(result);
         return result;
     }

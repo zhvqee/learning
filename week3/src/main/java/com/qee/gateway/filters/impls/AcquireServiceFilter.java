@@ -20,10 +20,14 @@ public class AcquireServiceFilter extends AbstractFilter {
     public boolean doFilter(Request request, Response response) {
         Registry registry = BeanConstext.getBean(Registry.class);
         Map<String, List<String>> allServiceProvider = registry.getAllServiceProvider();
-        List<String> serviceProviderList = allServiceProvider.get(request.getFullHttpRequest().uri());
+        String uri = request.getFullHttpRequest().uri();
+        String suri = uri.split("\\?")[0];
+        List<String> serviceProviderList = allServiceProvider.get(suri);
         if (CollectionUtils.isEmpty(serviceProviderList)) {
             return false;
         }
+
+        response.setRequestParams(uri.contains("?") ? uri.split("\\?")[1] : null);
         response.setServiceProviderList(serviceProviderList);
         return true;
     }

@@ -1,8 +1,8 @@
 package com.test.process;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.test.JsonUtil;
-import com.test.NetUtils;
+import com.test.utils.JsonUtil;
+import com.test.utils.NetUtils;
 import com.test.annotations.RegistryService;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;

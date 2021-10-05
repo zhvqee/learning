@@ -11,6 +11,8 @@ public class Response {
 
     private String requestUrl;
 
+    private String requestParams;
+
     private Object result;
 
 

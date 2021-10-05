@@ -46,5 +46,10 @@ final public class HttpOkClient {
         return null;
     }
 
+    public static void main(String[] args) {
+        String s = HttpOkClient.get("http://127.0.0.1:7777/test-service/test/get?abc=test");
+        System.out.println(s);
+    }
+
 
 }

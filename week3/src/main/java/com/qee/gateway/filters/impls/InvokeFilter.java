@@ -6,17 +6,22 @@ import com.qee.gateway.filters.Request;
 import com.qee.gateway.filters.Response;
 import com.qee.gateway.httpclient.HttpOkClient;
 import com.qee.gateway.nettyhttpclient.NettyHttpClient;
+import org.springframework.util.StringUtils;
 
 public class InvokeFilter extends AbstractFilter {
     @Override
     public boolean doFilter(Request request, Response response) {
         GateWayConfig requestConfig = request.getConfig();
+        String url = response.getRequestUrl();
+        if (!StringUtils.isEmpty(response.getRequestParams())) {
+            url = url + "?" + response.getRequestParams();
+        }
         if (requestConfig.getUseOKHttpClient()) {
-            String result = HttpOkClient.get("http://" + response.getRequestUrl());
+            String result = HttpOkClient.get("http://" + url);
             response.setResult(result);
         } else {
             //netty 实现http 调用
-            String result = new NettyHttpClient(requestConfig).get(response.getRequestUrl());
+            String result = new NettyHttpClient(requestConfig).get(url);
             response.setResult(result);
         }
         return true;
