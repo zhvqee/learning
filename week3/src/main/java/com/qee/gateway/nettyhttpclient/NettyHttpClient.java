@@ -87,7 +87,7 @@ public class NettyHttpClient {
             // FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, url, Unpooled.wrappedBuffer(msg.getBytes()));
 
             URI uri = URI.create(url.substring(url.indexOf("/")));
-            FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "/" + uri.toASCIIString());
+            FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, uri.toASCIIString());
 
 
             ResponseFuture responseFuture = new ResponseFuture();
