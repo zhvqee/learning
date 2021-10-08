@@ -26,7 +26,7 @@ public class Thread11 extends ThreadBase {
         for (int i = 0; i < THREAD_NUM; i++) {
             new Thread(() -> {
                 String execute = thread11.execute();
-                mappedByteBuffer.put
+                //mappedByteBuffer.put
                 mappedByteBuffer.put(execute.getBytes());
             }).start();
         }
