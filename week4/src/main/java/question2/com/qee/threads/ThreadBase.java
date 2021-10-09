@@ -1,4 +1,4 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Random;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads
+ * @Package: question2.threads
  * @ClassName: Thread01
  * @Description:
  * @Date: 2021/10/8 2:57 下午

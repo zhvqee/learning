@@ -1,4 +1,4 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import sun.misc.Unsafe;
 
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads
+ * @Package: question2.threads
  * @ClassName: Thread06  通过 wait notify 自实现 简单future
  * @Description:
  * @Date: 2021/10/8 3:05 下午

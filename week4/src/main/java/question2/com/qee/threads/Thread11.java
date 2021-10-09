@@ -1,4 +1,4 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -7,7 +7,7 @@ import java.nio.channels.FileChannel;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads
+ * @Package: question2.threads
  * @ClassName: Thread11 通过共享内存 MappedByteBuffer
  * @Description:
  * @Date: 2021/10/8 3:05 下午

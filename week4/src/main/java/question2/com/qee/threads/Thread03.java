@@ -1,11 +1,11 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads CountDownLatch, 主线程await等待获取
+ * @Package: question2.threads CountDownLatch, 主线程await等待获取
  * @ClassName: Thread03 利用
  * @Description:
  * @Date: 2021/10/8 3:05 下午

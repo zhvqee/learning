@@ -1,4 +1,4 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads
+ * @Package: question2.threads
  * @ClassName: Thread02 利用 线程池的submit Future机制获取
  * @Description:
  * @Date: 2021/10/8 3:05 下午
