@@ -1,4 +1,4 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import java.io.IOException;
 import java.io.PipedInputStream;
@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads
+ * @Package: question2.threads
  * @ClassName: Thread13  ReentrantLock Condition  PipedInputStream  PipedOutputStream实现
  * @Description:
  * @Date: 2021/10/8 3:05 下午

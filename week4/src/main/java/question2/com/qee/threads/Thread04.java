@@ -1,4 +1,4 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
@@ -7,7 +7,7 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads 利用和CyclicBarrier await完成后回调，主线程阻塞CountDownLatch.await()
+ * @Package: question2.threads 利用和CyclicBarrier await完成后回调，主线程阻塞CountDownLatch.await()
  * @ClassName: Thread03 利用
  * @Description:
  * @Date: 2021/10/8 3:05 下午

@@ -1,4 +1,4 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import sun.misc.Unsafe;
 
@@ -13,7 +13,7 @@ import java.util.concurrent.locks.LockSupport;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads
+ * @Package: question2.threads
  * @ClassName: Thread07  通过 LockSupport 自实现 简单future
  * @Description:
  * @Date: 2021/10/8 3:05 下午

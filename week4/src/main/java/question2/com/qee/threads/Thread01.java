@@ -1,11 +1,11 @@
-package com.qee.threads;
+package question2.com.qee.threads;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @ProjectName: learning
- * @Package: com.qee.threads
+ * @Package: question2.threads
  * @ClassName: Thread01 通过join 等待获取多线程执行结果
  * @Description:
  * @Date: 2021/10/8 3:05 下午
