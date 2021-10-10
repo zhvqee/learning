@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="test-service" />
         <module name="week1" />
         <module name="week2" />
         <module name="week3" />
+        <module name="test-service" />
         <module name="week4" />
+        <module name="week5" />
         <module name="others" />
       </profile>
     </annotationProcessing>
