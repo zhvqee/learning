@@ -12,7 +12,6 @@ import java.util.concurrent.CompletableFuture;
 public class GateWayApplication {
 
     public static void main(String[] args) {
-        CompletableFuture.completedFuture()
         SpringApplication.run(GateWayApplication.class, args);
     }
 }
