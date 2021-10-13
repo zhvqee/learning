@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.leeqee.xyz/schema/classStu"
+            targetNamespace="http://www.leeqee.xyz/schema/classStu">
+
+
+    <xsd:element name="ref">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:string">
+                    <xsd:attribute type="xsd:long" name="stuId" />
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="stus">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="clas:ref" maxOccurs="unbounded" minOccurs="0" xmlns:clas="http://www.leeqee.xyz/schema/classStu"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="student">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:string">
+                    <xsd:attribute type="xsd:short" name="id"  />
+                    <xsd:attribute type="xsd:string" name="name" use="optional"/>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:element name="class">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="clas:stus" xmlns:clas="http://www.leeqee.xyz/schema/classStu"/>
+            </xsd:sequence>
+            <xsd:attribute type="xsd:byte" name="clzzId"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

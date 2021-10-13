@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:classstu="http://www.leeqee.xyz/schema/classStu"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.leeqee.xyz/schema/classStu
+http://www.leeqee.xyz/schema/classStu/class-stdu.xsd">
+
+    <classstu:student id="9527" name="华安" />
+    <classstu:student id="10086" name="移动" />
+
+
+    <classstu:class clzzId="1">
+        <classstu:stus>
+            <classstu:ref stuId="9527" />
+            <classstu:ref stuId="10086" />
+        </classstu:stus>
+    </classstu:class>
+</beans>
