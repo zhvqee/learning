@@ -27,6 +27,7 @@
         <module>week4</module>
         <module>test-service</module>
         <module>week5</module>
+        <module>class-stu-starter</module>
     </modules>
 
     <dependencyManagement>
